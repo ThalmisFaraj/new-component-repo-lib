@@ -1,7 +1,7 @@
 <script>
   import svelteLogo from "./assets/svelte.svg";
   import viteLogo from "/vite.svg";
-  import Login from "./lib/Login.svelte";
+  import Login from "./lib/components/Login.svelte";
 
   function handleLoginSuccess(event) {
     console.log("Login successful:", event.detail.data);
