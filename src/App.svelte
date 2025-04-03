@@ -3,6 +3,7 @@
   import viteLogo from "/vite.svg";
   import Login from "./lib/components/Login.svelte";
   import Dropdown from "./lib/components/Dropdown.svelte";
+  import PieChart from "./lib/components/PieChart.svelte";
 
   const dropdownOptions = ["abc", "efg", "pqr"];
 
@@ -34,5 +35,8 @@
   </div>
   <div>
     <Dropdown options={dropdownOptions} />
+  </div>
+  <div>
+    <PieChart />
   </div>
 </main>
