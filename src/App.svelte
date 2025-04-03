@@ -2,6 +2,9 @@
   import svelteLogo from "./assets/svelte.svg";
   import viteLogo from "/vite.svg";
   import Login from "./lib/components/Login.svelte";
+  import Dropdown from "./lib/components/Dropdown.svelte";
+
+  const dropdownOptions = ["abc", "efg", "pqr"];
 
   function handleLoginSuccess(event) {
     console.log("Login successful:", event.detail.data);
@@ -28,5 +31,8 @@
       on:loginError={handleLoginError}
       on:forgotPassword={handleForgotPassword}
     />
+  </div>
+  <div>
+    <Dropdown options={dropdownOptions} />
   </div>
 </main>
